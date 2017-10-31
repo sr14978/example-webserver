@@ -40,7 +40,7 @@ deploy:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        cmd: node app.js
+        cmd: node /pipeline/source/app.js
         ports: "80"
         repository: jackoson/sam-bio
         registry: https://registry.hub.docker.com
