@@ -40,7 +40,6 @@ deploy:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        tag: tag-first
         cmd: node app.js
         ports: "80"
         repository: jackoson/sam-bio
