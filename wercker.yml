@@ -34,3 +34,14 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
+        tag: tag-first
+        cmd: node app.js
+        ports: "80"
+        repository: jackoson/sam-bio
+        registry: https://registry.hub.docker.com
