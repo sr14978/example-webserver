@@ -3,7 +3,7 @@ module.exports = {
 }
 
 function fib(n) {
-  if(n == 0) return 42
+  //if(n == 0) return 42
 
   var a = 0;
   var b = 1;
