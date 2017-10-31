@@ -1,9 +1,13 @@
 
 const express = require('express')
 const app = express()
+const calc = require('./calc')
+
+
 
 app.get('/', function (req, res) {
-  res.send('Hi, from Sam')
+  var r = Math.round(Math.random() * 100)
+  res.send('Hi, from Sam. fib(' + r + ') = ' + calc.fib(n))
 })
 
 app.listen(80, function () {
