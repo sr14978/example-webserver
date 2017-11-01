@@ -44,3 +44,11 @@ deploy:
         ports: "80"
         repository: jackoson/sam-bio
         registry: https://registry.hub.docker.com
+
+bla:
+  steps:
+    - script:
+        name: bla bla
+        code: |
+            echo "bla bla bla"
+            time
