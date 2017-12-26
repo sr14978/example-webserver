@@ -43,7 +43,6 @@ deploy:
         cmd: node /pipeline/source/app.js
         ports: "80"
         repository: jackoson/sam-bio
-        registry: https://registry.hub.docker.com
 
 bla:
   steps:
